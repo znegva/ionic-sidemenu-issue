@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DeepThoughtProvider } from '../../providers/deep-thought/deep-thought';
 
 /**
  * Generated class for the Page1Page page.
@@ -15,11 +16,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class Page1Page {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  answer: string;
+
+  constructor(
+      public navCtrl: NavController,
+      public navParams: NavParams,
+      public deepThoughtProvider: DeepThoughtProvider
+  ) {
+      this.answer = "...";
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Page1Page');
+    this.answer = "...";
+
+    this.deepThoughtProvider.getAnswer()
+    .then( (answer) => {
+        this.answer = answer;
+    })
   }
 
 }
