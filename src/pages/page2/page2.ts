@@ -26,7 +26,7 @@ export class Page2Page {
   }
 
   ionViewDidEnter() {
-    console.log('ionViewDidLoad Page2Page');
+    console.log('ionViewDidEnter Page2Page');
     this.answer = "...";
 
     this.deepThoughtProvider.getAnswer()
