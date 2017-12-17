@@ -26,9 +26,9 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
-      { title: 'Page1', component: Page1Page },
-      { title: 'Page2', component: Page2Page },
-      { title: 'Page3', component: Page3Page }
+      { title: 'Page1 - ionViedDidLoad', component: Page1Page },
+      { title: 'Page2 - ionViewDidEnter', component: Page2Page },
+      { title: 'Page3 - ionViedDidEnter + timeOut', component: Page3Page }
     ];
 
   }
