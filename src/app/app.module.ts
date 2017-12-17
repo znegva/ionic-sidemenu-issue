@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { Page1Page } from '../pages/page1/page1';
 import { Page2Page } from '../pages/page2/page2';
+import { Page3Page } from '../pages/page3/page3';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,7 +20,8 @@ import { DeepThoughtProvider } from '../providers/deep-thought/deep-thought';
     HomePage,
     ListPage,
     Page1Page,
-    Page2Page
+    Page2Page,
+    Page3Page
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { DeepThoughtProvider } from '../providers/deep-thought/deep-thought';
     HomePage,
     ListPage,
     Page1Page,
-    Page2Page
+    Page2Page,
+    Page3Page
   ],
   providers: [
     StatusBar,
