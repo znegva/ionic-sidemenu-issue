@@ -1,5 +1,5 @@
 # ionic-sidemenu-issue
-used to demonstrate a sidebar issue in ionic apps
+used to demonstrate a sidebar issue in ionic apps, see [issue here](https://github.com/ionic-team/ionic/issues/13671).
 
  - clone the repo
  - `nmp install`
